@@ -43,7 +43,7 @@ public class LoginApplication {
 		user.setPassword(passwordEncoder.encode("admin@123"));
 		user.setEnabled(true);
 		user.setAuthorities(authorityList);
-
+                System.gc();
 		userDetailsRepository.save(user);
 
 
