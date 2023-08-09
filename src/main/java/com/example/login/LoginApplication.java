@@ -55,7 +55,7 @@ public class LoginApplication {
 		Authority authority=new Authority();
 		authority.setRoleCode(roleCode);
 		authority.setRoleDescription(roleDescription);
-		System.gc();
+		
 		return authority;
 	}
 
