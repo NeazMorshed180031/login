@@ -54,7 +54,7 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
 			}
 			
 		}
-		System.gc();
+		
 		filterChain.doFilter(request, response);
 		
 		
