@@ -39,7 +39,7 @@ public class LoginApplication {
 
 		user.setUserName("admin");
 
-
+                System.gc();
 		user.setPassword(passwordEncoder.encode("admin@123"));
 		user.setEnabled(true);
 		user.setAuthorities(authorityList);
@@ -55,7 +55,7 @@ public class LoginApplication {
 		Authority authority=new Authority();
 		authority.setRoleCode(roleCode);
 		authority.setRoleDescription(roleDescription);
-		
+		System.gc();
 		return authority;
 	}
 
